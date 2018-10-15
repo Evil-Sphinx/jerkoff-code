@@ -6,7 +6,7 @@
 public class Singleton {
 
     private static class SingletonHolder {
-        private static final Singleton instace = new Singleton();
+        private static final Singleton instance = new Singleton();
     }
 
     private Singleton() {
@@ -14,7 +14,7 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        return SingletonHolder.instace;
+        return SingletonHolder.instance;
     }
 
 }
